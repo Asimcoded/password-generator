@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator by Asim Das</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon-icon.png" type="image/png">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Generator safe and secure Password with <br><span class="accent">Asim Password Generator</span></h1>
+        <div class="pass-container">
+            <div class="pass-box">
+                <input type="text" id="passbox">
+                <button id="copy"><img src="./images/copy-green.png"></button>
+                <button id="regenerate"><img src="./images/recycle-green.png"></button>
+            </div>
+            <div class="indication-container">
+                <div class="indicator-box">
+                    <div class="indication-bar"></div>
+                    <div class="indication-bar"></div>
+                    <div class="indication-bar"></div>
+                    <div class="indication-bar"></div>
+                </div>
+                <p>Weak</p>
+            </div>
+            <hr>
+            <p class="setting-label">Password settings</p>
+            <div class="setting-container">
+                <div class="set-box">
+                    <span class="label">Password length <input type="number" id="range-box"></span>
+                    <input type="range" id="range" min="6" max="50" value="12">
+                </div>
+                <div class="set-box">
+                    <span class="label">Lower Case</span>
+                    <input type="checkbox" id="lower">
+                </div>
+                <div class="set-box">
+                    <span class="label">Upper Case</span>
+                    <input type="checkbox" id="upper">
+                </div>
+                <div class="set-box">
+                    <span class="label">Number</span>
+                    <input type="checkbox" id="number">
+                </div>
+                <div class="set-box">
+                    <span class="label">Symbols</span>
+                    <input type="checkbox" id="symbol">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
