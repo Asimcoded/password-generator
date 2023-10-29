@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Jost;
+    src: url(./fonts/Jost-Regular.ttf);
+}
+:root{
+    --primary:#01161E;
+    --secondary:#F4F4F9;
+    --accent:#0FFF95;
+    --weak:#EA0000;
+    --medium:#EFC900;
+    --strong:#0BAE2F;
+    --skeleton:#D9D9D9;
+    --shadow-style:1px 1px 5px 1px rgba(0, 0, 0, 0.25);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Jost;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 500px;
+    width: 95%;
+}
+h1{
+    font-size: 30px;
+    color: var(--secondary);
+    font-weight: 400;
+}
+.accent{
+    color:var(--accent);
+    text-decoration: underline;
+}
+.pass-container{
+    margin: 20px 0;
+    padding: 30px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+}
+.pass-box{
+    display: flex;
+    align-items: center;
+    width: 100%;    
+    box-shadow: var(--shadow-style);
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.pass-box input{
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: transparent;
+    background-color: transparent;
+    font-size: 20px;
+}
+.pass-box button{
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+}
+.pass-box button img{
+    width: 25px;
+}
+.pass-box button img:last-child{
+    margin-left: 10px;   
+}
+
+
+.social-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-box span{
+    color: var(--secondary);
+    font-size: 20px;    
+}
+.social-box .icon-box img{
+    width: 30px;
+}
