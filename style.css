@@ -76,7 +76,115 @@ h1{
     margin-left: 10px;   
 }
 
+.indication-container{
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
 
+.indicator-box{
+    display: flex;
+    justify-content: center;
+}
+.indicator-box .indication-bar{
+    height: 10px;
+    width: 25%;
+    background: var(--skeleton);
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.indicator-box .indication-bar:last-child{
+    margin-right: 0;
+}
+
+.indicator-box .weak{
+    background-color: var(--weak);
+}
+.indicator-box .medium{
+    background-color: var(--medium);
+}
+.indicator-box .strong{
+    background-color: var(--strong);
+}
+.indicator-box .vstrong{
+    background-color: var(--accent);
+}
+.indication-container p{
+    /* color: #EA0000; */
+    font-size: 20px;
+    margin-top: 10px;
+}
+.weak{
+    color: var(--weak);
+}
+.medium{
+    color: var(--medium);
+}
+.strong{
+    color:var(--strong)
+}
+.vstrong{
+    color: var(--accent);
+}
+
+.setting-label{
+    font-size: 20px;
+    font-weight: 400;
+}
+.set-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.set-box .label{
+    font-size: 18px;
+}
+.set-box input[type="number"]{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: transparent;
+    box-shadow: var(--shadow-style);
+    margin-left: 10px;
+    text-align: center;
+}
+.set-box input[type="number"]::-webkit-inner-spin-button,
+.set-box input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.set-box input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    
+    background-color: var(--skeleton);    
+}
+.set-box input[type="range"]::-webkit-slider-thumb{
+    background-color: var(--accent);
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius:50%;
+    width: 15px;
+    height: 15px;
+}
+.set-box input[type="checkbox"]{
+    appearance: none;
+    border: none;
+    outline: transparent;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    box-shadow: var(--shadow-style);
+}
+.set-box input[type="checkbox"]:checked{
+    background-image: url(images/check.png);
+    background-size: cover;
+}   
 .social-box{
     display: flex;
     justify-content: space-between;
