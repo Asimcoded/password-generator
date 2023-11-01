@@ -68,6 +68,7 @@ h1{
     background-color: transparent;
     outline: transparent;
     border: none;
+    cursor: pointer;
 }
 .pass-box button img{
     width: 25px;
@@ -162,7 +163,7 @@ h1{
     width: 150px;
     height: 5px;
     border-radius: 5px;
-    
+    cursor: pointer;
     background-color: var(--skeleton);    
 }
 .set-box input[type="range"]::-webkit-slider-thumb{

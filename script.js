@@ -56,3 +56,4 @@ rangeBox.addEventListener("input",()=>{
         },1500)
     }
 })
+createPassword();
