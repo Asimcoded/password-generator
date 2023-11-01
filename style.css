@@ -137,6 +137,7 @@ h1{
     margin: 10px 0;
 }
 .set-box .label{
+    position: relative;
     font-size: 18px;
 }
 .set-box input[type="number"]{
@@ -171,6 +172,31 @@ h1{
     border-radius:50%;
     width: 15px;
     height: 15px;
+}
+#range-error{
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    z-index: 99;
+    background-color: var(--weak);
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: var(--shadow-style);
+    color: var(--secondary);
+    display: none;
+    animation: error .3s ease-in-out 2 alternate;
+}
+@keyframes error {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 .set-box input[type="checkbox"]{
     appearance: none;

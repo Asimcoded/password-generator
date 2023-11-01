@@ -30,8 +30,10 @@
             <p class="setting-label">Password settings</p>
             <div class="setting-container">
                 <div class="set-box">
-                    <span class="label">Password length <input type="number" id="range-box"></span>
-                    <input type="range" id="range" min="6" max="50" value="12">
+                    <span class="label">Password length <input type="number" id="range-box" value="12"> 
+                        <div id="range-error">Length between 4 to 50 only !</div>
+                    </span>
+                    <input type="range" id="range" min="4" max="50" value="12">
                 </div>
                 <div class="set-box">
                     <span class="label">Lower Case</span>
