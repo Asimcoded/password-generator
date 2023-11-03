@@ -224,3 +224,39 @@ h1{
 .social-box .icon-box img{
     width: 30px;
 }
+.error-field{
+    background-color: var(--weak);
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--secondary);
+    font-size: 20px;
+    max-width: 300px;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    animation: top .3s linear  1  ;
+
+    display: none;
+}
+@keyframes top {
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.error-field .note button{
+    background-color: transparent;
+    border:none;
+    outline: transparent;
+    cursor: pointer;
+}
+.error-field .note button img{
+    width: 30px;
+}   
+.error-field .note{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
