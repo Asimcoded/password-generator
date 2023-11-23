@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,27 @@
     <link rel="shortcut icon" href="images/favicon-icon.png" type="image/png">
     <script src="script.js" defer></script>
 </head>
+
 <body>
+    <div class="loader-container">
+        <div class="con">
+        <div class="dot-container">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+            <div class="dot3"></div>
+        </div>
+        <div class="loading-text">Loading</div>
+    </div>
+    </div>
     <div class="container">
         <h1>Generator safe and secure Password with <span class="accent">Asim Password Generator</span></h1>
         <div class="pass-container">
             <div class="pass-box">
                 <input type="text" id="passbox" readonly>
                 <button id="copy"><img src="./images/copy-green.png"></button>
+                <div class="tooltip-copy">Copy</div>
                 <button id="regenerate"><img src="./images/recycle-green.png"></button>
+                <div class="tooltip-re">Regenerate</div>
             </div>
             <div class="indication-container">
                 <div class="indicator-box">
@@ -30,26 +44,38 @@
             <p class="setting-label">Password settings</p>
             <div class="setting-container">
                 <div class="set-box">
-                    <span class="label">Password length <input type="number" id="range-box" value="12"> 
-                        <div id="range-error">Length between 4 to 50 only !</div>
+                    <span class="label">Password length <input type="number" id="range-box" value="12">
+                        <div id="range-error">Length between 4 to 30 only !</div>
                     </span>
-                    <input type="range" id="range" min="4" max="50" value="12">
+                    <input type="range" id="range" min="4" max="30" value="12">
                 </div>
                 <div class="set-box">
                     <span class="label">Lower Case</span>
-                    <input type="checkbox" id="lower" checked onclick="createPassword()">
+                    <label class="switch">
+                        <input type="checkbox" id="lower" checked onclick="createPassword()">
+                        <div class="slider"></div>
+                    </label>
                 </div>
                 <div class="set-box">
                     <span class="label">Upper Case</span>
-                    <input type="checkbox" id="upper" checked onclick="createPassword()">
+                    <label class="switch">
+                        <input type="checkbox" id="upper" checked onclick="createPassword()">
+                        <div class="slider"></div>
+                    </label>
                 </div>
                 <div class="set-box">
                     <span class="label">Number</span>
-                    <input type="checkbox" id="number" checked onclick="createPassword()">
+                    <label class="switch">
+                        <input type="checkbox" id="number" checked onclick="createPassword()">
+                        <div class="slider"></div>
+                    </label>
                 </div>
                 <div class="set-box">
                     <span class="label">Symbols</span>
-                    <input type="checkbox" id="symbol" checked onclick="createPassword()">
+                    <label class="switch">
+                        <input type="checkbox" id="symbol" checked onclick="createPassword()">
+                        <div class="slider"></div>
+                    </label>
                 </div>
             </div>
         </div>
@@ -73,4 +99,5 @@
         <span>Select one field below !</span>
     </div>
 </body>
+
 </html>

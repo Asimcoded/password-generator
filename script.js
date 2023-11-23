@@ -118,7 +118,7 @@ range.addEventListener("input", () => {
 })
 rangeBox.addEventListener("input", () => {
     let value = Number.parseInt(rangeBox.value);
-    if (value >= 4 && value <= 50) {
+    if (value >= 4 && value <= 30) {
         range.value = value;
         createPassword();
     }
@@ -139,3 +139,9 @@ copyBtn.addEventListener("click",()=>{
     navigator.clipboard.writeText(passwordBox.value);
 })
 createPassword();
+window.addEventListener("load",()=>{
+    let loader = document.querySelector(".loader-container");
+    setTimeout(() => {
+        loader.style.display = "none"
+    }, 1000);
+})
